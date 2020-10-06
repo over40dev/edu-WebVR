@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebVR</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="sand" src="images/sand.png" alt="sand">
+      <img id="rock" src="images/rock.png" alt="rock">
+    </a-assets>
+
+    <a-sphere position="0 1 -2" color="red" radius=".2"></a-sphere>
+
+    <a-cylinder position="-1 1 -2" color="crimson" radius=".3" height="3"></a-cylinder>
+
+    <a-cone src="#rock" repeat="5 5" position="1 1 -2" radius-bottom=".4" radius-top=".2" height="3"></a-cone>
+
+    <a-plane src="#sand" repeat="150 150" color="#f7e98b" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+  </a-scene>
+  
+</body>
+</html>
